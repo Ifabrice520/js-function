@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Function</title>
+    <style>
+        body {
+            background-color: rgb(112, 61, 9);
+            color: white;
+        }
+
+        .one {
+            width: 30%;
+            height: 50vh;
+            background-color: black;
+            position: absolute;
+            left: 35%;
+            top: 25%;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+
+        .one h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: oblique;
+            margin-top: 20%;
+        }
+
+        .one button {
+            width: 25%;
+            height: 5vh;
+            background-image: linear-gradient(rgb(190, 74, 208),rgb(221, 0, 255));
+            color: white;
+            border: none;
+            position: absolute;
+            left: 35%;
+            top: 60%;
+            font-size: 18px;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        #demo {
+            position: relative;
+            left: 35%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>Hello Fabrice</h1>
+        <p id="demo"></p>
+        <button onclick="fabrice()">Try Me</button>
+    </div>
+    <script>
+        function fabrice() {
+            var x = document.getElementById("demo").innerText = "How are you";
+        }
+    </script>
+</body>
+</html>
